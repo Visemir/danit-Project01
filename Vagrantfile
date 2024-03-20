@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   db_host = ENV['DB_HOST']
   mysql_url = "jdbc:mysql://#{db_host}/#{db_name}"
   app_user = ENV['APP_USER']
-  puts "#{db_host}"
+  
   
 #I describe the first virtual machine. The database should start first
   config.vm.define "DB_VM" do |db_vm|
